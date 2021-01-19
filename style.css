@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(230, 214, 195);}
+  .highlightText {background-color: white;}
+  p {background-color: bisque;
+  font-family: Georgia, serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+
+}
+
+.fixed-header, .fixed-footer {
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-family: garamond, serif;
+  font-size: larger;
+  padding: 10px 0;
+  left: 0px;
+  right: 0px;
+  background-image: linear-gradient(rgb(196, 241, 255), rgb(230, 214, 195));
+  z-index: 10;
+  border-bottom: 10px;
+}
+.fixed-header{
+  top: 0;
+}
+.fixed-footer{
+  bottom: 0;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
