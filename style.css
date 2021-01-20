@@ -11,7 +11,7 @@ body {
 
 .fixed-header, .fixed-footer {
   width: 100%;
-  position: fixed;
+  position: relative;
   text-align: center;
   font-family: garamond, serif;
   font-size: larger;
@@ -33,3 +33,7 @@ body {
   margin: 0 auto;
 }
 
+td, tbody, table {
+  border: thin, black, solid;
+  padding-right: 20px;
+}
