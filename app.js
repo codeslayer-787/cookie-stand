@@ -9,7 +9,7 @@ function Sales(name, minCust, maxCust, avgCookie){
   this.maxCust = maxCust;
   this.avgCookie = avgCookie;
   this.cookieSales = [];
-  
+
 }
 Sales.prototype.renderHeader = function (){
   var tableHeader = document.getElementById('fixed-header');
@@ -31,7 +31,7 @@ Sales.prototype.renderHeader();
 Sales.prototype.display = function ( ){
 
   var tableBody = document.getElementById('tbody');
-  
+
   var hoursRow = document.createElement('thead');
   hoursRow.textContent = hourOps;
 
@@ -51,32 +51,28 @@ Sales.prototype.display = function ( ){
   // var maxCell = document.createElement('td');
   // var totalCell = document.createElement('td');
 
-  // maxCell.textContent = this.MaxCust;
-  // totalCell.textContent = this.cookieSales;
+  //Keep working at this
 
-  // locationRow.appendChild(minCell);
-  // locationRow.appendChild(maxCell);
-  // locationRow.appendChild(totalCell);
-  function sumAll(){
-    let sum = 1;
-    for (let i = 0; i <hourOps.length; i++){
-      for (let j = 0; j < hourOps[i].length; j++){
-        sum += hourOps[i][j];        
+  function createFooter(){
+    var totalOfTotals = 0;
+    var hourlyTotal = 0;
+    for (var i = 0; i <hourOps.length; i++){
+      hourlyTotal=0;
+      for (var j = 0; j < hourOps[i].length; j++){
+        hourlyTotal += Sales[j].cookieSales[i];
       }
     }
-    return sum;
+    return hourlyTotal;
   }
-  sumAll();
-  console.log(sumAll);
+  createFooter();
+  console.log(createFooter);
 
   tableBody.appendChild(locationRow);
 
-  
-
 };
 Sales.prototype.generateCookiesPerHr = function (){
-  var simulateSale = Math.floor((Math.random() *(this.maxCust - this.minCust) + this.minCust));
-  var cookiesThisHr = simulateSale / this.avgCookie; 
+  var simulateSale = Math.floor((Math.random() *(this.maxCust - this.minCust + this.minCust) + 1));
+  var cookiesThisHr = simulateSale * this.avgCookie;
   return cookiesThisHr;
 
 };
@@ -86,19 +82,7 @@ Sales.prototype.createHourlySales = function(){
     this.cookieSales.push(cookiesThisHr);
   }
 };
-// Sales.prototype.renderFooter = function (){
-//   var tableFooter = document.getElementById('table-footer');
-//   var footerRow = document.createElement('tr');
-//   var footerDataCell = document.createElement('td');
-//   footerDataCell.textContent = 'Totals';
-//   footerRow.appendChild(footerDataCell);
-//   tableFooter.appendChild(footerRow);
-// };
-// Sales.prototype.renderFooter();
 
-//tablebody.innerHTML = '';
-
-// Need to make a for look on location array that calls createHourlySales for every location.
 
 var Seattle = new Sales ('Seattle',23, 65, 6.3);
 var Tokyo = new Sales('Tokyo',3, 24, 1.2);
@@ -157,8 +141,7 @@ Lima.display();
 //   MinCust: 3,
 //   MaxCust: 24,
 //   AvgCookie: 1.2,
-//   cookieSales: [], 
-  
+//   cookieSales: [],
 
 //   simulate: function () {
 //     for (let i = 0; i<hourOps.length; i++){
@@ -193,8 +176,8 @@ Lima.display();
 //   MinCust: 11,
 //   MaxCust: 38,
 //   AvgCookie: 3.7,
-//   cookieSales: [], 
-  
+//   cookieSales: [],
+
 
 //   simulate: function () {
 //     for (let i = 0; i<hourOps.length; i++){
@@ -229,8 +212,7 @@ Lima.display();
 //   MinCust: 20,
 //   MaxCust: 38,
 //   AvgCookie: 2.3,
-//   cookieSales: [], 
-  
+//   cookieSales: [],
 
 //   simulate: function () {
 //     for (let i = 0; i<hourOps.length; i++){
@@ -265,8 +247,7 @@ Lima.display();
 //   MinCust: 2,
 //   MaxCust: 16,
 //   AvgCookie: 4.6,
-//   cookieSales: [], 
-  
+//   cookieSales: [],
 
 //   simulate: function () {
 //     for (let i = 0; i<hourOps.length; i++){
