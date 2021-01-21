@@ -1,36 +1,76 @@
-body {
-  background-color: rgb(230, 214, 195);}
-  .highlightText {background-color: white;}
-  p {background-color: bisque;
-  font-family: Georgia, serif;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-
-}
-
-.fixed-header, .fixed-footer {
-  width: 100%;
-  position: fixed;
+  
+header {
   text-align: center;
-  font-family: garamond, serif;
-  font-size: larger;
-  padding: 10px 0;
-  left: 0px;
-  right: 0px;
-  background-image: linear-gradient(rgb(196, 241, 255), rgb(230, 214, 195));
-  z-index: 10;
-  border-bottom: 10px;
+  vertical-align: top;
+  height: 100px;  
+  padding-top: 0px;
+  background-image: linear-gradient(cyan, beige);
+  margin-top: 0px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-bottom: 10px; */
 }
-.fixed-header{
-  top: 0;
+footer {
+  background-image: linear-gradient(beige, cyan);
+  text-align: center;
+  height: 100px;
+  margin-top: 20px;
 }
-.fixed-footer{
-  bottom: 0;
+ul {
+  margin: 0;
+  padding-left: 110px;
+  padding-top: 30px;
+  float: left;
 }
-.container{
-  width: 80%;
-  margin: 0 auto;
+
+li {
+  display: inline;
+  position:center;
+  padding-left: 00px;
+  padding-right: 60px;
+  padding-bottom: 0px;
+  /* margin-top: 0px; */
+}
+#navImg {
+  margin-top: 5px;
+  margin-left: 10%;
+  float: left; 
+  padding-left: 125px;
+  width: 200px;
+  height: 70px;
+  
+}
+
+body{
+  text-align: center;
+  background-color: beige;
+  margin-top: 0px;
+  border-style: inset;
+  border-color: black;
+}
+
+img.align-center {
+  display:block;
+  margin: 0px auto;
+}
+
+#bottomImg {
+  padding: 15px;
+  height: 480;
+  width: 400;
+}
+
+.One {
+  width: 480px;
+  height: 200px;
+  overflow: hidden;
+  display:inline-block;
+  text-align: left;
+  margin-top: 10px;
+  padding-bottom: 230px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+
 }
 
 td, tbody, table {
@@ -39,4 +79,8 @@ td, tbody, table {
 }
 
 #headerfish {height: 50px; width: 70px; border: solid black 2px; float: left;
+}
+
+h1 {
+  font-size:xx-large;
 }
