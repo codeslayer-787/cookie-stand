@@ -98,9 +98,18 @@ td, tbody, table {
   padding-right: 20px;
 }
 
+#store-list {
+  border: thin;
+}
+
 #headerfish {height: 50px; width: 70px; border: solid black 2px; float: left;
 }
 
 h1 {
   font-size:xx-large;
+}
+
+button{
+  border-style: groove;
+  
 }

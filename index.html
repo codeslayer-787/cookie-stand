@@ -14,8 +14,17 @@
         <ul>
           <li> Our Cookies </li>
           <li> History </li>
-          <li> Store Locations </li>
           <li> About Us </li>
+          <fieldset>
+          <li><a> Store Locations </a></li>
+            <select name="locations">
+              <option value="seattle">Seattle</option>
+              <option value="tokyo">Tokyo</option>
+              <option value="paris">Paris</option>
+              <option value="dubai">Dubai</option>
+              <option value="lima">Lima</option> 
+            </select>
+          </fieldset>
         </ul>
       </nav>
     </header>
@@ -35,7 +44,28 @@
     </section>
     <section>
       <div>
-        <p ><h4>Featured Section Heading</h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p ><h4>Order Now!</h4>
+          <fieldset>
+            <legend>Order Here</legend>
+            <label>Email:<br />
+            <input type="text" name="email" /></label><br />
+            <label>Mobile Number:<br />
+            <input type="text" name="mobile" /></label><br />
+            <label>How Many?</label><br />   
+            <select name="location-form">
+              <option value="5">Five</option>
+              <option value="10">Ten</option>
+              <option value="20">Twenty</option>
+              <option value="30">Thirty</option>
+            </select><br />
+          </fieldset>
+            <p>
+            <div id="button">
+            <button>Complete Your Order!</button>
+            </p>
+            </div>
+            </select>       
+          
         
         <img id="bottomImg3"src="/images/frosted-cookie.jpg">
         <p><button>Click Here!</button>
@@ -47,6 +77,7 @@
 
       </p>
     </footer>
+    <script src="app1.js"></script>
   </body>
 
 </html>
