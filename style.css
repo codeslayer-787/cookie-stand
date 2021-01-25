@@ -47,6 +47,8 @@ body{
   margin-top: 0px;
   border-style: inset;
   border-color: black;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 img.align-center {
@@ -98,9 +100,26 @@ td, tbody, table {
   padding-right: 20px;
 }
 
+#store-list {
+  border: thin;
+}
+
 #headerfish {height: 50px; width: 70px; border: solid black 2px; float: left;
 }
 
 h1 {
   font-size:xx-large;
+}
+
+button{
+  border-style: groove;
+  
+}
+#merchandise {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }

@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="reset" href="reset.css">
-    <link rel="stylesheet" href="style.css">    
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
     <header>
-      <h1>Sales Data</h1>
-      <div id="fixed-header"></div>
-        <div class = "container"></div>
+      <h1>Daily Sales</h1>
+        <ul>
+          <li>
+          <a href="index.html">Home</a>            
+          </li>
+        </ul>        
     </header>
-    <table>
-      <thead>
-        <tr>
-            <th></th>
-        </tr>
-    </thead>
-      <tbody id="tbody">
-        <tr>
-          <td>
-
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <main>
-      <h2></h2>
-      <section id="sales">
-
-      </section>
-    </main>
-    <footer>
-
-    </footer>
-    <span class="highlightText">test</span>
+      <div id='container'>
+      </div>
+      <section>
+      <div>
+        <h2>
+          <p>Add A New Store</p>
+          <fieldset>
+            <form id="form">
+            <!-- <p>New Location</p> -->
+            <input type="text" value="city" name="city" size="15" maxlength="20" placeholder="New Location"></input>
+            <!-- Minimum Cookies Per Hour -->
+            <input type ="text" name="min" size="15" maxlength="20" placeholder="Minimum Sales"/>
+            <!-- <p>Maximum Cookies Per Hour -->
+            <input type ="text" name="max" size="15" maxlength="20" placeholder="Maximum Sales"/>
+            <!-- <p>Average Cookies Per Hour -->
+            <input type ="text" name="avg" size="15" maxlength="20" placeholder="Average Sales"/>
+            <input type="submit" id="input">Submit</input>
+          </form>
+          </fieldset>
+        </section>
+        </h2>
+        
+      </div>
+  </main>
     <script src="app.js"></script>
-
-  </body>
-
-
-
+  
+</body>
 </html>
