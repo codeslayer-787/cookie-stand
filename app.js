@@ -106,6 +106,7 @@ var lima = new Location('Lima', 2, 16, 4.6);
 lima.averageCookies();
 lima.newRow();
 
+
 hourlyTotals();
 
 // console.log(location);
@@ -135,6 +136,17 @@ formElement.addEventListener('submit', function (event) {
   console.log(cityName.value, minValue.value, maxValue.value, avgValue.value);
   // console.log(event.target.min.value);
   // console.log(event.target.max.value);
+});
+
+var formSubmit = document.getElementById('newStand');
+formSubmit.addEventListener('submit', function (event) {
+  event.preventDefault();
+  var name = event.target.loc.value;
+  var minCust = parseInt(event.target.minCust.value);
+  var maxCust = parseInt(event.target.maxCust.value);
+  var avgCk = parseInt(event.target.avgCk.value);
+  new Location(name, minCust, maxCust, avgCk);
+  footerMaker();
 });
 // function location(name, breed, personality) {
 

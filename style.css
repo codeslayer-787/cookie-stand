@@ -47,6 +47,8 @@ body{
   margin-top: 0px;
   border-style: inset;
   border-color: black;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 img.align-center {
@@ -111,5 +113,13 @@ h1 {
 
 button{
   border-style: groove;
+  
+}
+#merchandise {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
   
 }
